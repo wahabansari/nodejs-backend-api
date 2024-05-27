@@ -58,7 +58,7 @@ async function handleUpdateProduct(req, res) {
   const { id } = req.params;
 
   try {
-    const updatedProduct = await ProductsList.findByIdAndUpdate(id, req.body, {
+    const updatedProduct = await ProductList.findByIdAndUpdate(id, req.body, {
       new: true, // for updating we have to define this to ensure that new things are updating accordingly
     });
     if (!updatedProduct) {
