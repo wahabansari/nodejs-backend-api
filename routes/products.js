@@ -1,5 +1,4 @@
 import express from "express";
-import ProductList from "../modals/product.js";
 import {
   handleAllProducts,
   handleCreateSingleUser,

@@ -1,4 +1,4 @@
-import ProductList from "../modals/product";
+import ProductList from "../modals/product.js";
 
 async function handleAllProducts(req, res) {
   const allProducts = await ProductList.find({});
